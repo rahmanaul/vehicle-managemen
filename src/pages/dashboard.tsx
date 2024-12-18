@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
 import { VehicleRecap, columns } from '@/components/dashboard/table-vehicle-recap/columns'
 import {VehicleInstansi, columns as columnsVehicleInstansi} from '@/components/dashboard/table-vehicle-instansi/columns'
 import { DataTable } from '@/components/data-table'
+import { ChartCountVehicleAsn } from '@/components/dashboard/chart/chart-count-vehcle-asn'
 
 
 type Stats = {
@@ -206,6 +207,7 @@ export default function DashboardPage() {
           <DataTable columns={columnsVehicleInstansi} data={stats.tebleVehicleInstansi} />
         </CardContent>
       </Card>
+      <ChartCountVehicleAsn />
     </div>
   )
 }
